@@ -1,28 +1,28 @@
 /* GET 'home' page */
 const homelist = (req, res) => {
     res.render('locations-list', {
-    title: 'Loc8r - find a place to work with wifi',
+    title: 'Car Rentals - Find the best way',
     pageHeader: {
-    title: 'Locr',
-    strapline: 'Find places to work with wifi near you!'
+    title: 'Car Rentals',
+    strapline: 'Find the best way'
     },
     locations: [{
-    name: 'Starcups',
-    address: '1256 High Street, Reading, RG6 1PS',
+    name: 'KINNU RENTALS',
+    address: 'OPP-Anurag University,Street-1,Jodimetla ,Hyderabad,50007',
     rating: 3,
-    facilities: ['Hot drinks', 'Food', 'Premium wifi'],
+    facilities: ['Car washing', 'Available 24/7', 'unlimited KM'],
     distance: '100m'
     },{
     name: 'Cafe Hero',
-    address: '125 High Street, Reading, RG6 1PS',
+    address: 'OPP-Anurag University,Street-1,Jodimetla ,Hyderabad,50007',
     rating: 4,
-    facilities: ['Hot drinks', 'Food', 'Premium wifi'],
+    facilities: ['Car washing', 'Available 24/7', 'unlimited KM'],
     distance: '200m'
     },{
     name: 'Burger Queen',
-    address: '1256 High Street, Reading, RG6 1PS',
+    address: 'Anurag pakka galli',
     rating: 2,
-    facilities: ['Food', 'Premium wifi'],
+    facilities: ['Available 24/7', 'unlimited KM'],
     distance: '250m'
 }]
 });
