@@ -1,88 +1,115 @@
-
 @import url("//fonts.googleapis.com/css?family=Lobster|Cabin:400,700");
+
+/* Font Styles */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lobster', cursive;
 }
 legend {
   font-family: 'Lobster', cursive;
 }
+
+/* Navbar Styles */
 .navbar {
-  background-color: #ad1d28;
-  border-color: #911821;
+  background-color: #000; /* Black background for navbar */
+  border-color: #f00; /* Red border for navbar */
 }
 .navbar-light .navbar-brand {
   font-family: 'Lobster', cursive;
-  color: #fff;
+  color: #f00; /* Red text for navbar brand */
 }
 .navbar-light .navbar-toggler {
-  color: white;
-  border-color: white;
+  color: #f00; /* Red toggler text */
+  border-color: #f00; /* Red toggler border */
 }
 .navbar-light .navbar-toggler-icon {
-background-image: url("data:image/svgxml;charset=utf8,%3Csvg ➥viewBox='0 0 30 30'xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2'stroke-linecap='round' ➥stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23f00' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: white;
+  color: #f00; /* Red color for navbar links */
 }
+
+/* Card Styles */
 .card {
-  background-color: #469ea8;
+  background-color: #ada6a6; /* Dark gray for card background */
   padding: 1rem;
 }
 .card-primary {
-  border-color: #a2ced3;
+  border-color: #f00; /* Red border for card-primary */
   margin-bottom: 0.5rem;
 }
+
+/* Banner Styles */
 .banner {
   margin-top: 4em;
-  border-bottom: 1px solid #469ea8;
+  border-bottom: 1px solid #f00; /* Red border for banner */
   margin-bottom: 1.5em;
   padding-bottom: 0.5em;
 }
+
+/* Review Header Styles */
 .review-header {
-  background-color: #31727a;
+  background-color: #be8e8e; /* Black background for review header */
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-bottom: 0.5em;
 }
+
+/* Review Styles */
 .review {
   margin-right: -16px;
   margin-left: -16px;
   margin-bottom: 0.5em;
 }
+
+/* Badge and Button Styles */
 .badge-default, .btn-primary {
-  background-color: #ad1d28;
-  border-color: #911821;
+  background-color: #f00; /* Red background for badge and button */
+  border-color: #000; /* Black border for badge and button */
 }
+
+/* Header Link Styles */
 h4 a, h4 a:hover {
-  color: #fff;
+  color: #f00; /* Red color for header links */
 }
+
+/* Header Small Text Styles */
 h4 small {
   font-size: 60%;
   line-height: 200%;
-  color: #aaa;
+  color: #bbb; /* Light gray for small text in h4 */
 }
 h1 small {
-  color: #aaa;
+  color: #bbb; /* Light gray for small text in h1 */
 }
+
+/* Address Styles */
 .address {
   margin-bottom: 0.5rem;
 }
+
+/* Facilities Badge Styles */
 .facilities span.badge {
   margin-right: 2px;
 }
-p{
-margin-bottom: 0.65rem;
+
+/* Paragraph Styles */
+p {
+  margin-bottom: 0.65rem;
 }
-a{
-color: rgba(255, 255, 255, 0.8)
+
+/* Link Styles */
+a {
+  color: #f00; /* Red color for links */
 }
 a:hover {
-  color:#fff
+  color: #fff; /* White color for link hover */
 }
+
+/* Body Styles */
 body {
   font-family: "Cabin", Arial, sans-serif;
-  color: #fff;
-  background-color: #108a93;
+  color: #fff; /* White text color */
+  background-color: #5a5757; /* Black background color */
 }
