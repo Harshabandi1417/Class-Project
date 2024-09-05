@@ -1,39 +1,45 @@
-extends layout
+//- extends layout
+//- include _includes/sharedHTMLfunctions
 
+//- block content
+//-   .row.banner
+//-     .col-12
+//-       h1= pageHeader.title
+//-       small  #{pageHeader.strapline}
+//-   .row
+//-     .col-12.col-md-8
+//-       each location in locations
+//-         .card
+//-           .card-block
+//-             h4
+//-               a(href="/location")= location.name
+//-             +outputRating(location.rating)
+//-             span.badge.badge-pill.badge-default.float-right= location.distance
+//-             p.address= location.address
+//-             .facilities
+//-               each facility in location.facilities
+//-                 span.badge.badge-warning= facility
+//-     .col-12.col-md-4
+//-       p.lead= sidebar
+extends layout
+include _includes/sharedHTMLfunctions
 block content
   .row.banner
     .col-12
       h1= pageHeader.title
-        small
-        &nbsp;#{pageHeader.strapline}
-
-  // Listing 4.6 Complete template for app_server/views/locations-list.pug
-  // Name of the listing and a link to the location
-  // Uses Font Awesome icons to output a star rating
-  // Uses Bootstrap’s badge helper class to display the distance away
-  // Address of the location
-  // Facilities of the location, output using Bootstrap’s badge classes
-  // Figure 4.9 Onscreen rendering of a single location on the List page
-
-  // Starts header area
+      small #{pageHeader.strapline}
   .row
     .col-12.col-md-8
-      .card
-        .card-block
-          h4
-            a(href="/location") KINNU RENTALS
-            small &nbsp;
-            i.fas.fa-star
-            i.fas.fa-star
-            i.fas.fa-star
-            i.far.fa-star
-            i.far.fa-star
-            span.badge.badge-pill.badge-default.float-right 100m
-          p.address OPP-Anurag University,Street-1,Jodimetla ,Hyderabad,50007
-          p.facilities
-            span.badge.badge-warning Car washing
-            span.badge.badge-warning Available 24/7
-            span.badge.badge-warning unlimited KM
-
+      each location in locations
+        .card
+          .card-block
+            h4
+              a(href="/location")= location.name
+              +outputRating(location.rating)
+              span.badge.badge-pill.badge-default.float-right= location.distance
+            p.address= location.address
+            .facilities
+              each facility in location.facilities
+                span.badge.badge-warning= facility
     .col-12.col-md-4
-      p.lead  Car Rentals - Find the best way helps you find the best cars for rent with affordable prices and good maintainance.
+      p.lead= sidebar
